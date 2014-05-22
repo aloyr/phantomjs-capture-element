@@ -31,3 +31,8 @@ BLOCK="block-hid-document-widgets-doc-filter-selective"
 FILE="$dia-documents"
 callPhantom
 
+URL="http://rs-dev.hidglobal.com/drivers"
+BLOCK="block-hid-selective-forms-drivers-custom-search"
+FILE="$dia-drivers"
+callPhantom
+
