@@ -19,7 +19,7 @@ page.open( address, function(status) {
     try {
       console.log('processing closed ' + elementId + ' - ' + fileName);
       var element = page.evaluate(function(elementId){
-          return document.getElementById(elementId).getBoundingClientRect();
+          return document.getElementById(elementId).parentNode.getBoundingClientRect();
         }, elementId);
       page.clipRect = { 
         top: element.top, 
