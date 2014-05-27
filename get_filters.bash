@@ -3,7 +3,7 @@ dia="deliverables/`date "+%Y%m%d-%H%M%S-"`"
 mkdir deliverables 2> /dev/null
 
 function callPhantom() {
-  phantomjs test.js $URL $BLOCK $FILE
+  phantomjs idGetter.js $URL $BLOCK $FILE
 }
 
 URL="http://rs-dev.hidglobal.com/products/card-printers/fargo"
