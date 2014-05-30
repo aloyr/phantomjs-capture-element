@@ -1,4 +1,5 @@
-var page = new WebPage();
+//var page = new WebPage();
+var page = require("webpage").create();
 
 if (phantom.args.length !=3) {
   console.log('Usage: idGetter.js <url> <elementId>');
