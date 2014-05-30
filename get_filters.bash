@@ -7,14 +7,14 @@ urldevpt="http://rs-dev.hidglobal.pt/"
 mkdir deliverables 2> /dev/null
 
 function callPhantom() {
-  phantomjs idGetter.js $urlproden$URL $BLOCK $dia-chrome-$FILE-prod
-  phantomjs idGetter.js $urlprodpt$URL $BLOCK $dia-chrome-$FILE-prod-pt
-  phantomjs idGetter.js $urldeven$URL $BLOCK $dia-chrome-$FILE-dev
-  phantomjs idGetter.js $urldevpt$URL $BLOCK $dia-chrome-$FILE-dev-pt
-  slimerjs/slimerjs idGetter.js $urlproden$URL $BLOCK $dia-firefox-$FILE-prod
-  slimerjs/slimerjs idGetter.js $urlprodpt$URL $BLOCK $dia-firefox-$FILE-prod-pt
-  slimerjs/slimerjs idGetter.js $urldeven$URL $BLOCK $dia-firefox-$FILE-dev
-  slimerjs/slimerjs idGetter.js $urldevpt$URL $BLOCK $dia-firefox-$FILE-dev-pt
+  phantomjs idGetter.js $urlproden$URL $BLOCK $dia$FILE-chrome-prod
+  phantomjs idGetter.js $urlprodpt$URL $BLOCK $dia$FILE-chrome-prod-pt
+  phantomjs idGetter.js $urldeven$URL $BLOCK $dia$FILE-chrome-dev
+  phantomjs idGetter.js $urldevpt$URL $BLOCK $dia$FILE-chrome-dev-pt
+  slimerjs/slimerjs idGetter.js $urlproden$URL $BLOCK $dia$FILE-firefox-prod
+  slimerjs/slimerjs idGetter.js $urlprodpt$URL $BLOCK $dia$FILE-firefox-prod-pt
+  slimerjs/slimerjs idGetter.js $urldeven$URL $BLOCK $dia$FILE-firefox-dev
+  slimerjs/slimerjs idGetter.js $urldevpt$URL $BLOCK $dia$FILE-firefox-dev-pt
 }
 
 URL="products/card-printers/fargo"
