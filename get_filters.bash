@@ -11,6 +11,10 @@ function callPhantom() {
   phantomjs idGetter.js $urlprodpt$URL $BLOCK $dia-chrome-$FILE-prod-pt
   phantomjs idGetter.js $urldeven$URL $BLOCK $dia-chrome-$FILE-dev
   phantomjs idGetter.js $urldevpt$URL $BLOCK $dia-chrome-$FILE-dev-pt
+  slimerjs/slimerjs idGetter.js $urlproden$URL $BLOCK $dia-firefox-$FILE-prod
+  slimerjs/slimerjs idGetter.js $urlprodpt$URL $BLOCK $dia-firefox-$FILE-prod-pt
+  slimerjs/slimerjs idGetter.js $urldeven$URL $BLOCK $dia-firefox-$FILE-dev
+  slimerjs/slimerjs idGetter.js $urldevpt$URL $BLOCK $dia-firefox-$FILE-dev-pt
 }
 
 URL="products/card-printers/fargo"
