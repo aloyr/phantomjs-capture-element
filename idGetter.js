@@ -2,7 +2,7 @@
 var page = require("webpage").create();
 
 if (phantom.args.length !=3) {
-  console.log('Usage: idGetter.js <url> <elementId>');
+  console.log('Usage: idGetter.js <url> <elementId> <name of png>');
   phantom.exit();
 }
 
